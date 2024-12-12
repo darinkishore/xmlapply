@@ -2,6 +2,8 @@
 
 **xmlapply** is a command-line tool for applying file changes defined in an XML specification to a target project directory. 
 
+Used to make work more efficient with o1. 
+
 
 Changes can include creating, updating, or deleting files. 
 
