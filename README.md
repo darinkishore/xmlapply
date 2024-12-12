@@ -88,6 +88,7 @@ Give that to o1, wait however long it takes, copy that to your clipboard, then r
 git clone https://github.com/yourusername/xmlapply.git
 cd xmlapply
 pip install .
+```
 
 This will install xmlapply as a CLI command on your system (assuming ~/.local/bin or equivalent is on your PATH).
 
@@ -184,29 +185,35 @@ xmlapply apply
 
 xmlapply apply --file edge_cases.xml --dry-run
 
-Development
+## Development
 
 This repository includes:
-	•	CLI Tool: src/xmlapply/cli.py
-	•	Parser: src/xmlapply/parser.py for parsing XML structures into Python data classes.
-	•	Applier: src/xmlapply/apply.py for applying changes to the filesystem.
-	•	Configuration: src/xmlapply/config.py for reading and writing default directory settings.
-	•	Core Module Init: src/xmlapply/__init__.py defines the package interface.
-	•	Examples & Tests: test.xml and edge_cases.xml provide sample XML inputs.
+
+- **CLI Tool**: `src/xmlapply/cli.py`
+- **Parser**: `src/xmlapply/parser.py` for parsing XML structures into Python data classes
+- **Applier**: `src/xmlapply/apply.py` for applying changes to the filesystem
+- **Configuration**: `src/xmlapply/config.py` for reading and writing default directory settings
+- **Core Module Init**: `src/xmlapply/__init__.py` defines the package interface
+- **Examples & Tests**: `test.xml` and `edge_cases.xml` provide sample XML inputs
 
 For development, ensure you have requirements.txt dependencies installed:
 
+```bash
 pip install -r requirements.txt
+```
 
 You can run the hello.py script to confirm the environment is set up:
 
+```bash
 python hello.py
+```
 
 Expected output:
-
+```
 Hello from xmlapply!
+```
 
-License
+## License
 
 This project is distributed under the terms of the MIT license. See LICENSE for details.
 
