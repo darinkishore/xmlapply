@@ -17,9 +17,30 @@ credit idea: https://github.com/mckaywrigley/o1-xml-parser
 
 ### setup
 
-- `git clone 
 
-hold up brb
+`git clone https://github.com/darinkishore/xmlapply.git`
+
+`cd xmlapply`
+
+`mkdir -p ~/templates` (or wherever you wanna put your templates)
+
+`cp o1.hbs ~/templates/`
+
+### Workflow
+
+Okay, so you're working on a project. 
+
+Want to use o1 to help.
+
+go to project directory, run
+
+`xmlapply use-dir` to indicate that you're working on the project in that directory now.
+
+for whatever directory you want to include in your query as context, (inlcuding the root `.`)
+
+`code2prompt --template ~/templates/o1.hbs $dir`
+
+Give that to o1, wait however long it takes, copy that to your clipboard, then run `xmlapply apply`. 
 
 
 ## Table of Contents
@@ -28,6 +49,7 @@ hold up brb
   - [workflow](#workflow)
     - [prereqs](#prereqs)
     - [setup](#setup)
+    - [Workflow](#workflow-1)
   - [Table of Contents](#table-of-contents)
   - [Features](#features)
   - [How It Works](#how-it-works)
