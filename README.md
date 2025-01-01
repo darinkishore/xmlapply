@@ -17,7 +17,7 @@ cp o1.hbs ~/templates/
 ```
 When you want to use o1 to assist a project, go to the project directory and run:
 ```
-xmlapply use-dir
+xmlapply use-dir . 
 ```
 This sets the current directory as the one xmlapply will work on. Then, for any directory you’d like to include as context (including the root `.`), do:
 ```
