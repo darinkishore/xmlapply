@@ -2,12 +2,10 @@
 
 **xmlapply** is a command-line tool for applying file changes defined in an XML specification to a target project directory. 
 
-Used to make work more efficient with o1. 
-
+Used to make applying things that o1 spits out trivial.
 
 Changes can include creating, updating, or deleting files. 
 
-credit idea: https://github.com/mckaywrigley/o1-xml-parser
 
 
 ## workflow
@@ -184,6 +182,11 @@ xmlapply apply
 3. Preview what would happen (no actual changes):
 
 xmlapply apply --file edge_cases.xml --dry-run
+
+## Credits
+
+credit idea: https://github.com/mckaywrigley/o1-xml-parser
+
 
 ## Development
 
